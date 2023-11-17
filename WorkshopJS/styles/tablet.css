@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 41%);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p, li, a, button {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 936px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .hero {
+    height: 650px;
+  }
+  .hero nav {
+    display: block;
+  }
+  .hero nav ul {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  .hero h1 {
+    width: 50%;
+  }
+  .hero button {
+    display: none;
+  }
+  .interactive .container {
+    position: relative;
+  }
+  .interactive img {
+    margin: 0;
+  }
+  .interactive .text {
+    width: 50%;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .our-creations {
+    margin-top: 120px;
+  }
+  .our-creations .container {
+    position: relative;
+    display: block;
+  }
+  .our-creations .creations {
+    margin-top: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .our-creations h2 {
+    text-align: left;
+  }
+  .our-creations button {
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .footer footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer footer a {
+    order: 1;
+  }
+  .footer footer nav {
+    order: 3;
+  }
+  .footer footer nav ul {
+    flex-direction: row;
+  }
+  .footer footer .social {
+    order: 2;
+  }
+  .footer footer .social ul {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  .footer footer p {
+    order: 4;
+    text-align: right;
+  }
+}/*# sourceMappingURL=tablet.css.map */

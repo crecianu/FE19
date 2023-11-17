@@ -1,0 +1,6 @@
+@media print {
+    ul {
+        list-style: disc;
+        display: block;
+    }
+}

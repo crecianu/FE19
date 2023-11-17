@@ -1,0 +1,20 @@
+@import 'colours';
+
+@mixin customHoverState($culoareDeBaza, $culoareLaHover) {
+    background-color: $culoareDeBaza;
+    a {
+        color: $culoareWhite;
+    }
+    
+
+    &:hover{
+        background-color: $culoareLaHover;
+    }
+}
+
+@mixin generateGrid($columnNumber, $rowNumber){
+    display: grid;
+    grid-template-columns: repeat($columnNumber, 1fr);
+    grid-template-rows: repeat($rowNumber, 1fr);
+}
+

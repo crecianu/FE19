@@ -1,0 +1,33 @@
+/* @media screen and (min-width: 390px) and (max-width: 790px) {
+    .hamburgher {
+        display: block;
+    }
+
+    .list-item{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+} */
+
+@media screen and ( 390px < width < 790px ) {
+    .hamburgher {
+        display: block;
+    }
+
+    .list-item{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+}

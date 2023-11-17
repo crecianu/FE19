@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    background-color: black;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.list-item:hover {
+    background-color: green;
+}
+
+.list-item:hover a {
+    color: black;
+    font-weight: bold;
+    /* visibility: visible; */
+}
+
+a {
+    transition-property: color, font-weight;
+    transition-duration: 0.5s;
+    /* visibility: hidden; */
+    /* transition-delay: 0.5s; */
+}
+
+.list-item {
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    padding: 15px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    /* transition-delay: 0s, 1s; */
+}
+
+.list-item.always-show{
+    display: block;
+}
+
+.hamburgher {
+    display: none;
+}
+
+.hamburgher span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: white;
+  border-radius: 3px;
+}
+
+@media screen and ( 390px < width < 790px ) {
+    .hamburgher {
+        display: block;
+    }
+
+    .list-item{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+    }
+}
+
+.race{
+    width: 300px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    /* transition-property: all; */
+    /* transition: width 0.5s ease-in-out; */
+    /* transition-property: rotate, background-color; */
+    /* transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease; */
+}
+
+/* 
+
+0 35 70 100
+
+*/
+
+@keyframes rotateAndColor {
+    0% {
+        /* rotate: 0deg;
+        background-color: red;
+        left: 0; */
+        /* margin-top: 0; */
+        /* margin-left: 0; */
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+
+    25% {
+        /* rotate: 45deg;
+        background-color: green;
+        left: 100px;  */
+        /* margin-top: 0; */
+        top:0;
+        left: calc(100% - 100px);
+
+        /* margin-left: -100px; */
+        background-color: green;
+    }
+
+    50% {
+        /* rotate: 90deg;
+        background-color: blue;
+        left: 200px;
+        top: 100px; */
+        top: calc(100% - 100px);
+        /* margin-top: -100px; */
+        /* margin-left: -100px; */
+        left: calc(100% - 100px);
+        background-color: blue;
+    }
+
+    75% {
+        /* rotate: 120deg;
+        background-color: magenta;
+        left: 200px;
+        top: 150px; */
+        top: calc(100% - 100px);
+        /* margin-top: -100px; */
+        left: 0;
+        /* margin-left: 0; */
+        background-color: magenta;
+    }
+
+    100% {
+        /* rotate: 180deg;
+        background-color: yellow;
+        left: 200px;
+        top: 200px; */
+        /* margin-top: 0; */
+        /* margin-left: 0; */
+        top: 0;
+        left: 0;
+        background-color: yellow;
+    }
+}
+
+
+/* .race:hover .red{
+    rotate: 180deg;
+    background-color: yellow;
+} */
+
+/* .box:hover{
+    rotate: 180deg;
+    background-color: yellow;
+} */
+
+/* .race:hover .red, .race:hover .blue {
+    width: 300px;
+} */
+
+.green{
+    background-color: green;
+}
+
+.red {
+    /* position: absolute; */
+    background-color: red;
+    /* animation-name: rotateAndColor; */
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: normal; */
+    /* animation-fill-mode: forwards; */
+}
+
+/* .red:hover{
+    animation-play-state: paused;
+} */
+
+.blue{
+    /* transition-delay: 0.5s; */
+    background-color: blue;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>WoskShop</title>
+
+  <link href="styles/main.css" rel="stylesheet" />
+  <link href="styles/medium-scale.css" rel="stylesheet" media="screen and (min-width: 640px)" />
+  <link href="styles/tablet.css" rel="stylesheet" media="screen and (min-width: 992px)" />
+  <link href="styles/desktop.css" rel="stylesheet" media="screen and (min-width: 1200px)" />
+  <script async type="module" src="js/init.js"></script>
+  <script async type="module" src="js/seeAllCreations.js"></script>
+  <style>
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+  
+  </div>
+  <section class="hero">
+    <div class="container">
+      <header>
+        <a href="/mainPage.html">
+          <img src="images/logo.svg" alt="Logo" />
+        </a>
+        <button>
+          <img src="images/icon-hamburger.svg" alt="Hamburger menu" />
+        </button>
+        <nav>
+          <ul>
+            <li>
+              About
+            </li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+            <li>Products: <span id="totalShopCount">0</span></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Immersive experience that deliver</h1>
+    </div>
+  </section>
+  <section class="our-creations">
+    <div class="container">
+      <h2>Our Creations</h2>
+
+      <div>
+        <label for="search">Search</label>
+        <input type="text" id="search" name="search" />
+        <button id="search-button">Search</button>
+      </div>
+      <button id="myBtn">Open Modal</button>
+      <div>
+        <label for="minPriceRange">Min Price Range</label>
+        <input type="range" id="minPriceRange" name="minPriceRange" min="0" max="100"/>
+        <span id="minPriceRangeValue"></span>
+      </div>
+      <div>
+        <label for="maxPriceRange">Max Price Range</label>
+        <input type="range" id="maxPriceRange" name="maxPriceRange" min="0" max="100"/>
+        <span id="maxPriceRangeValue"></span>
+      </div>
+     
+      <div id="listCreation" class="creations">
+        
+      </div>
+      <div class="pagination">
+      </div>
+
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <footer>
+        <a href="#">
+          <img src="images/logo.svg" alt="Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/icon-facebook.svg" alt="icon facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon-twitter.svg" alt="icon twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/icon-pinterest.svg" alt="icon pinterest" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/icon-instagram.svg" alt="icon instagram" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="reserved">
+          @2023 Loopstudios. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>

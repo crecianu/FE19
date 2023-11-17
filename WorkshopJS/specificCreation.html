@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>WoskShop</title>
+
+  <link href="styles/main.css" rel="stylesheet" />
+  <link href="styles/medium-scale.css" rel="stylesheet" media="screen and (min-width: 640px)" />
+  <link href="styles/tablet.css" rel="stylesheet" media="screen and (min-width: 992px)" />
+  <link href="styles/desktop.css" rel="stylesheet" media="screen and (min-width: 1200px)" />
+  <script async type="module" src="js/init.js"></script>
+  <script async type="module" src="js/specificCreation.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="container">
+      <header>
+        <a href="/mainPage.html">
+          <img src="images/logo.svg" alt="Logo" />
+        </a>
+        <button>
+          <img src="images/icon-hamburger.svg" alt="Hamburger menu" />
+        </button>
+        <nav>
+          <ul>
+            <li>
+              About
+            </li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+            <li>Products: <span id="totalShopCount">0</span></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Immersive experience that deliver</h1>
+    </div>
+  </section>
+  <section class="our-creations">
+    <div class="container">
+      <div class="creation-detail">
+
+        <article>
+          <img id="specific-article-img" src="" alt="">
+          <h1 id="specific-article-title"></h1>
+        </article>
+        <p id="specific-article-description"></p>
+
+      </div>
+      <div class="actions">
+        <div class="shop-action">
+          <button id="plus">+</button>
+          <button id="minus">-</button>
+          Count: <span class="shopCount">0</span>
+        </div>
+        <button id="addToFavorite">Add to favorite</button>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <footer>
+        <a href="#">
+          <img src="images/logo.svg" alt="Logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/icon-facebook.svg" alt="icon facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/icon-twitter.svg" alt="icon twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/icon-pinterest.svg" alt="icon pinterest" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/icon-instagram.svg" alt="icon instagram" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="reserved">
+          @2022 Loopstudios. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>

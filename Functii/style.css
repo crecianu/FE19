@@ -1,0 +1,23 @@
+.cutie{
+    width: 200px;
+    height: 200px;
+}
+
+.cutie1{
+    background-color: red;
+    position: absolute;
+}
+
+.cutie2{
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.cutie3{
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
